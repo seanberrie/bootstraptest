@@ -5,13 +5,18 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/css/mdb.min.css" rel="stylesheet">
     <title>Hello, world!</title>
   </head>
   <body class="text-success bg-dark">
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-white">
     <a class="navbar-brand" href="#"><img src="https://admin.17hats.com/images/icon-17hats.svg"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -47,7 +52,7 @@
 
         <!-- media styles -->
 
-        <div class="bg-white p-5 rounded">
+        <div class="bg-white p-5 rounded animated rubberBand">
             <h1 class="text-center">Welcome to 17Hats!</h1>
                 <ul class="list-unstyled">
                     <li class="media">
@@ -75,8 +80,8 @@
             </div>
             <!-- dropdown button -->
 
-            <p class="text-center mt-5">
-                <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <p class="text-center mt-5 animated fadeIn delay-1s">
+                <button class="btn btn-success waves-light" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                     Button with data-target
                 </button>
             </p>
@@ -88,7 +93,7 @@
 
             <!-- carousel -->
 
-            <div class="m-5">
+            <div class="m-5 animated bounceInLeft">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -114,10 +119,11 @@
 
             <!-- youtube modal -->
             <div class="text-center mb-5">
-                <a href="#" class="btn btn-success" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/loFtozxZG0s" >VIDEO</a>
+                <a href="#" class="btn btn-success waves-light" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/loFtozxZG0s" >VIDEO</a>
+                <span class="badge badge-pill border border-success">click the video button to the left</span>
             </div>
             <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
                     <div class="modal-body">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -128,12 +134,88 @@
                     </div>
                 </div>
             </div>
-                  
+            
+        </div>
+        <div class="bg-white p-5">
+            <div class="card-deck m-5 ">
+                <div class="card wow fadeInUp">
+                    <img class="card-img-top" src="https://i.imgur.com/1FOorsj.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+                <div class="card wow rollIn">
+                    <img class="card-img-top" src="https://i.imgur.com/OsarbSu.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+                <div class="card wow zoomInRight">
+                    <img class="card-img-top" src="https://i.imgur.com/NZUsoJR.jpg?1" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                    <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark p-5">
+                <div class="card-deck m-5 ">
+                    <div class="card wow slideInLeft">
+                        <img class="card-img-top" src="https://i.imgur.com/1FOorsj.jpg" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                    <div class="card wow slideInDown">
+                        <img class="card-img-top" src="https://i.imgur.com/OsarbSu.jpg" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                    <div class="card wow slideInRight">
+                        <img class="card-img-top" src="https://i.imgur.com/NZUsoJR.jpg?1" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <footer class="bg-white text-center">
+            <strong>Made in 2019 as a test for 17Hats</strong>
+        </footer>
+        <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/js/mdb.min.js"></script>
 
-    </div>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
     $(document).ready(function(){
   autoPlayYouTubeModal();
@@ -150,6 +232,7 @@
           });
       });
   }
+  new WOW().init();
 </script>
 </body>
 </html>
